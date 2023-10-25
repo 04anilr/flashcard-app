@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(img/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg);
+  background-size: cover;
+}
+.container {
+  width: 90vw;
+  max-width: 70.5em;
+  position: relative;
+  margin: auto;
+}
+.logo{
+    color: aliceblue;
+    padding-right: 47rem;
+}
+.add-flashcard-con {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.2em 1em;
+  margin-left: 2rem;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.add-flashcard-con button {
+  font-size: 1em;
+  background-color: #dde3f6;
+  color: #2e2d2d;
+  padding: 0.8em 1.2em;
+  font-weight: 500;
+  border-radius: 0.4em;
+}
+#card-con {
+  margin-top: 1em;
+}
+.question-container {
+  width: 90vw;
+  max-width: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #292828;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 12px 29px 32px 29px;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
+.question-container h2 {
+  font-size: 2.2em;
+  color: #c8ccd9;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.error-con {
+  align-self: center;
+}
+#error {
+  color: #ff5353;
+  font-weight: 400;
+}
+.fa-xmark {
+  font-size: 1.4em;
+  height: 1.8em;
+  width: 1.8em;
+  display: grid;
+  place-items: center;
+  color: #e6e1e1;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+label {
+  color: #d7dae1;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+textarea {
+  width: 100%;
+  padding: 0.7em 0.5em;
+  border: 1px solid #d0d0d0;
+  outline: none;
+  color: #3f3f41;
+  border-radius: 0.3em;
+  resize: none;
+}
+textarea:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+textarea:focus {
+  border-color: #363d55;
+}
+#save-btn {
+  font-size: 1em;
+  background-color: #c8d5fb;
+  color: #353333;
+  padding: 0.6em 0;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+.card-list-container {
+  display: grid;
+  padding: 0.2em;
+  gap: 1.5em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: #f4f1f0;
+  box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+  padding: 1.2em;
+  border-radius: 0.4em;
+}
+.question-div,
+.answer-div {
+  text-align: justify;
+}
+.question-div {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  color: #423737;
+}
+.answer-div {
+  margin-top: 1em;
+  font-weight: 400;
+  color: #1f1c1c;
+}
+.show-hide-btn {
+  display: block;
+  background-color: #161515;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6em 0;
+  border-radius: 0.3em;
+  letter-spacing: 2px;
+}
+.buttons-con {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit,
+.delete {
+  background-color: transparent;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+.edit {
+  color: #515253;
+}
+.delete {
+  color: #ff5353;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .card-list-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+  }
+  .add-flashcard-con{
+    padding: 0 0rem;
+    margin-left: 0;
+  }
+  .container{
+    padding:  0 0;
+  }
+  .logo{
+    padding-right: 8rem;
+  }
+  body{
+    font-size: 15px;
+    background-image: url(img/annie-spratt-4-4WPFLVhAY-unsplash.jpg);
+  background-size: 100% ;
+}
+}
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 10px;
+    
+  }
+  .card-list-container {
+    grid-template-columns: 1fr;
+    gap: 1.2em;
+  }
+  .logo{
+    padding-left: 2rem;
+  }
+}
